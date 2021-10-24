@@ -1,0 +1,72 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@react-google-maps/api": "^2.2.0",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "autosuggest-highlight": "^3.1.1",
+    "axios": "^0.21.4",
+    "bootstrap": "^5.0.0",
+    "formik": "^2.2.9",
+    "google-map-react": "^2.1.10",
+    "is": "^3.3.0",
+    "lodash": "^4.17.21",
+    "node-sass": "^5.0.0",
+    "query-string": "^7.0.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-alpha.2",
+    "react-cookies": "^0.1.1",
+    "react-datepicker": "^4.2.1",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.2",
+    "react-easy-crop": "^3.5.3",
+    "react-icons": "^4.3.1",
+    "react-markdown": "^6.0.3",
+    "react-notifications-component": "^3.1.0",
+    "react-rating": "^2.0.5",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "^4.0.3",
+    "react-slick": "^0.28.1",
+    "react-star-ratings": "^2.3.0",
+    "recharts": "^2.1.5",
+    "redux": "^4.1.1",
+    "slick-carousel": "^1.8.1",
+    "tawkto-react": "^2.0.3",
+    "universal-cookie": "^4.0.4",
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {}
+}

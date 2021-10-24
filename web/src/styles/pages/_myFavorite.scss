@@ -1,0 +1,21 @@
+.myfavs {
+    margin: 10px auto;
+    ul {
+        li {
+            button {
+                font-weight: 600;
+                padding: 20px 80px;
+                border: none !important;
+            }
+        }
+    }
+    .tab-content {
+        margin: 30px 0;
+    }
+    .nav-link.active{
+        border-top: 1px solid $primary !important;
+        border-left: 1px solid $primary !important;
+        border-right: 1px solid $primary !important;
+    }
+}
+

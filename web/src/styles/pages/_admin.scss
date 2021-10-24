@@ -1,0 +1,386 @@
+.adminPage {
+    svg{
+        box-sizing: unset !important;
+        vertical-align: initial !important;
+    }
+    .adminPageContainer{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+}
+// topbar ========================================
+.topbar{
+    width: 100%;
+    height: 50px;
+    background-color: #008248;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    .topbarWrapper{
+        height:100%;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .topLeft{
+            .logo{
+                font-weight: bold;
+                font-size: 30px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .topRight{
+            display: flex;
+            align-items: center;
+            .topbarIcons{
+                position: relative;
+                cursor: pointer;
+                margin-right: 10px;
+                color: white ;
+                .topIconBag{
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    top:-5px;
+                    right: 0px;
+                    color: white;
+                    background-color: red;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                }
+            }
+            .topAvatar{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+// ====sidebar=====================
+.sidebar{
+    flex: 1; 
+    height: calc(100vh - 50px);
+    background-color:#008248;
+    position: sticky;
+    top: 50px;
+    .sidebarWrapper{ 
+        padding: 20px;
+        .sidebarMenu{
+            color: white;
+            .sidebarTitle{
+                color: #97989b;
+                margin-bottom: 20px;
+                margin-left: 0px;
+             }
+             .sidebarList{
+                list-style: none;
+                .sidebarListItem{
+                    margin-left: -20px;
+                    margin-bottom: 10px;
+                    border-radius: 3px;
+                    padding-bottom: 5px;
+                    cursor: pointer;
+                    .sidebarIcon{
+                        padding-right:10px;
+                        font-size: 24px !important;
+                        padding-top: 5px;
+                        padding-left: 10px;
+                     }
+                 }
+                 .sidebarListItem.active,
+                 .sidebarListItem:hover{
+                    background-color: #97989b;
+                 }
+             }
+         }
+     }
+ }
+  //====adminHome
+.adminHome{
+    flex: 5;
+    margin-top: 0;
+    .adminHomeWidgets{
+        display: flex;
+        margin: 20px;
+    }
+}
+.admin_add_brand{
+    flex: 1;
+    box-shadow: 5px 5px 10px 5px #717171;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 20px;
+    height: 450px;
+    
+    .admin_add_brand_header{
+        margin-bottom: 20px;
+        .admin_add_brand_title{
+            font-size: 30px;
+            font-weight: 500;
+            color:#008248
+        }
+    }
+    .admin_add_brand_body{     
+        .brandBtn{
+            height: 40px !important;
+        }
+        .add_brand_list{
+           margin-top: 15px;
+          height: 250px;
+          overflow: auto;
+           ul{
+               padding-left: 0 !important;
+               width: 75%;
+
+               .add_brand_item{
+                list-style: none;
+                height: 30px;
+                padding-left: 10px;
+                margin-left: 10px;    
+                margin-bottom: 10px;
+                border-radius: 3px;
+                margin-right: 0 !important;
+
+            }
+            .add_brand_item:hover{
+                background-color: #97989b;
+            }
+           }
+        }
+     
+    }
+}
+.admin_add_model{
+    flex: 2;
+    box-shadow: 5px 5px 10px 5px #717171;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 20px;
+    .admin_add_model_header{
+        margin-bottom: 20px;
+        .admin_add_model_title{
+            font-size: 30px;
+            font-weight: 500;
+            color:#008248
+        }
+    }
+    .admin_add_model_body{
+        .modelBtn{
+            height: 40px !important;
+            margin-top: 32px;
+        }
+        .model_list{
+            width: 100%;
+            height: 280px;
+            overflow: auto;
+            ul{
+                padding-left: 0 !important;
+            }
+            .model_item{
+                list-style: none;
+                margin-top: 10px;
+                height: 30px;
+                padding-left: 10px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+                margin-right: 0 !important;
+            }
+            .model_item:hover{
+                background-color: #97989b;
+            }
+        }
+        
+    }
+}
+//featureinfo=====
+.admin_feature{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    .admin_feature_item{
+        flex: 1;
+        margin-right: 20px;
+        padding: 5px;
+        height: 150px;
+        box-shadow: 5px 5px 10px 5px #717171;
+        border-radius: 5px;
+        position: relative;
+        .text-primary {
+            color: #0d6efd!important;
+        }
+        .admin_feature_icon{
+            font-size: 30px;
+            font-weight: 500;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+        .admin_feature_body{
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            font-size: 80px;
+            font-weight: 800;
+           
+        }
+    }
+}
+.modal-body{
+    .modal_user{
+        display: flex;
+       
+        .modal_user_title{
+            flex: 1;
+            margin-right: 10px;
+            img{
+                width: 300px;
+                height: 400px;
+                border-radius: 5px;
+            }
+            box-shadow: 5px 5px 10px 5px #717171;
+            border: none;
+            border-radius: 5px;
+        }
+        .modal_user_detail{
+            flex:2;
+            padding: 20px;
+            box-shadow: 5px 5px 10px 5px #717171;
+            border: none;
+            border-radius: 5px;
+            .modal_user_account_detail{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .modal_user_info{
+                margin-bottom: 10px;
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+                .modal_user_icon{
+                    font-size: 24px;
+                    color: #008248;
+                }
+                .modal_user_info_detail{
+                    color: #97989b;
+                    margin-left: 15px;
+                    
+                    .modal_user_button{
+                        margin-left: 10px;
+                        border-radius: 5px;
+                        border: none;
+                        background-color:#eeeef7;
+                        color:#97989b;
+                    }
+                    .modal_user_button:hover{
+                        color: white;
+                        background-color: #008248;
+                    }
+                }
+            }
+        }
+    }
+    .modal_vehicle{
+        display: flex;
+        .modal_vehicle_left{
+            flex: 3;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 5px 5px 10px 5px #717171;
+            margin-right: 10px;
+            height: 500px;
+            img{
+                width: 100%;
+                height: 500px;
+                border-radius: 5px;
+            }
+        }
+        .modal_vehicle_right{
+            padding: 10px;
+            flex: 2;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 5px 5px 10px 5px #717171;
+            height: 500px;
+            overflow: auto;
+            .modal_vehicle_icon{
+                color: #008248;
+                margin-right: 10px;
+            }
+            .modal_vehicle_info_title{
+                // margin-top: 20px;
+                color: #717171;
+            }
+            .modal_vehicle_info_configure{
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                .modal_vehicle_info_left{
+                    flex: 3;
+                }
+                .modal_vehicle_info_right{
+                    flex:4;
+                    
+                }
+            }
+            .icon{
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
+}
+
+//==userList===
+.admin_users_list{
+    flex:5;
+    padding: 20px;
+    .admin_users_list_title{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .admin_users_list_body{
+        .admin_users_table{
+            width: 100%;
+            border-spacing: 20px;
+            border-collapse: unset !important;
+            .admin_user_img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+           .admin_user_display{
+              
+               .admin_user_button{           
+                width: 80px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                border-radius: 5px;
+                background-color: #eeeef7;
+                color:gray;
+                border: none;
+                .admin_user_icon{
+                    font-size: 16px;
+                    margin-right: 5px;
+                    margin-left: 10px;
+                }
+            }
+            .admin_user_button:hover{
+                color: white;
+                background-color: #008248;
+            }
+           }
+        }
+    }
+}
